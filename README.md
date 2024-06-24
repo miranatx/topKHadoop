@@ -1,27 +1,4 @@
-# Please add your team members' names here. 
-
-## Team members' names 
-
-1. Student Name:
-
-   Student UT EID:
-
-2. Student Name:
-
-   Student UT EID:
-
- ...
-
-##  Course Name: CS378 - Cloud Computing 
-
-##  Unique Number: 51515
-    
-
-
-# Add your Project REPORT HERE 
-
-
-# Project Template
+# Project Template - Top-K Hadoop Example. 
 
 # Running on Laptop     ####
 
@@ -51,30 +28,22 @@ Specify your own Output directory like
 
 To compile the project and create a single jar file with all dependencies: 
 	
-```	mvn clean package ```
-
+```mvn clean package```
 
 
 ## Run your application
+
 Inside your shell with Hadoop
 
 Running as Java Application:
 
-```java -jar target/MapReduce-WordCount-example-0.1-SNAPSHOT-jar-with-dependencies.jar SOME-Text-Fiel.txt  intermediatefolder  output  ``` 
+```java -jar target/topKHadoop-0.1-SNAPSHOT-jar-with-dependencies.jar SOME-Text-Fiel.txt  intermediatefolder  output  ``` 
 
 For example 
-```java -jar target/MapReduce-WordCount-example-0.1-SNAPSHOT-jar-with-dependencies.jar 20-news-same-line.txt  intermediatefolder  output  ``` 
+```java -jar target/topKHadoop-0.1-SNAPSHOT-jar-with-dependencies.jar 20-news-same-line.txt  intermediatefolder  output  ``` 
 
 Or has hadoop application
 
 ```hadoop jar your-hadoop-application.jar edu.cs.utexas.HadoopEx.WordCountTopKDriver arg0 arg1 arg2 ```
 
 
-
-## Create a single JAR File from eclipse
-
-
-
-Create a single gar file with eclipse 
-
-*  File export -> export  -> export as binary ->  "Extract generated libraries into generated JAR"

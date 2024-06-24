@@ -56,11 +56,9 @@ public class WordCountTopKDriver extends Configured implements Tool {
 			FileOutputFormat.setOutputPath(job, new Path(args[1]));
 			job.setOutputFormatClass(TextOutputFormat.class);
 
-
 			if (!job.waitForCompletion(true)) {
 				return 1;
 			}
-
 
 			Job job2 = new Job(conf, "TopK");
 			job2.setJarByClass(WordCountTopKDriver.class);

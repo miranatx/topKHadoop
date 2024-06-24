@@ -7,7 +7,7 @@
 	<name>Hadoop MapReduce</name>
 	<description>A Hadoop MapReduce example </description>
 	<groupId>edu.cs.utexas.HadoopEx</groupId>
-	<artifactId>MapReduce-WordCount-example</artifactId>
+	<artifactId>topKHadoop</artifactId>
 	<version>0.1-SNAPSHOT</version>
 
 
@@ -17,11 +17,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
 	</properties>
-
 	<build>
 		<plugins>
-
-
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<executions>
@@ -44,10 +41,6 @@
 				</configuration>
 			</plugin>
 			
-			
-			
-			
-
 		</plugins>
 	</build>
 	<dependencies>
