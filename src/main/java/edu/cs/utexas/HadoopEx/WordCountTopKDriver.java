@@ -36,14 +36,14 @@ public class WordCountTopKDriver extends Configured implements Tool {
 		try {
 			Configuration conf = new Configuration();
 
-			Job job = new Job(conf, "WordCount");
+			Job job = new Job(conf, "AirportCount");
 			job.setJarByClass(WordCountTopKDriver.class);
 
 			// specify a Mapper
-			job.setMapperClass(WordCountMapper.class);
+			job.setMapperClass(AirportMapper.class);
 
 			// specify a Reducer
-			job.setReducerClass(WordCountReducer.class);
+			job.setReducerClass(AirportReducer.class);
 
 			// specify output types
 			job.setOutputKeyClass(Text.class);
